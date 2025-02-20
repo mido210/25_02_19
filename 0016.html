@@ -6,24 +6,128 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>6번</title>
 	<style>
-		#p2 {
+		.p2 {
 			margin-bottom: -15px;
+		}
+
+		span {
+			font-weight: bold;
+		}
+
+		video {
+			width: 700px;
+		}
+
+		table {
+			width: 450px;
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+
+		th {
+			border: 1px solid black;
+		}
+
+		td {
+			border: 1px solid black;
+			text-align: left;
+			padding-left: 10px;
+		}
+
+		.small {
+			font-weight: 400;
+		}
+
+		.backg {
+			background-color: lightgray;
+		}
+
+		#tname {
+			width: 500px;
+			margin: 0 auto;
 		}
 	</style>
 
 </head>
 
 <body>
-	<img src="./img/tangerines.jpg" alt="">
+	<img id="top" src="./img/tangerines.jpg" alt="">
 	<ul>
-		<li><a href="">레드향</a></li>
-		<li><a href="">레드향 샐러드 레시피</a></li>
-		<li><a href="">상품 구성</a></li>
+		<li><a href="#mid1">레드향</a></li>
+		<li><a href="#mid2">레드향 샐러드 레시피</a></li>
+		<li><a href="#bott">상품 구성</a></li>
 	</ul>
-	<h1>레드향</h1>
-	<p>껍질에 붉은 빛이 돌아 레드향이라 불린다</p>
-	<p id="p2">레드향은 한라봉과 귤을 교배한 것으로</p>
-	<p>일반 귤보다 2~3배 크고, 과욱이 붉고 통통하다</p>
+	<h1 id="mid1">레드향</h1>
+	<div>
+		<p>껍질에 붉은 빛이 돌아 <span>레드향</span>이라 불린다</p>
+
+		<p class="p2">레드향은 한라봉과 귤을 교배한 것으로</p>
+
+		<p>일반 귤보다 2~3배 크고, 과욱이 붉고 통통하다</p>
+
+		<p class="p2">비타민 C와 비타민 P가 풍부해</p>
+
+		<p><span>혈액순환</span>, <span>감가예방</span> 등에 좋은 것으로 알려져 있다.</p>
+	</div>
+
+	<h2 id="mid2">레드향 샐러드 레시피</h2>
+	<div>
+		<p><span>재료 : </span>레드향 1개, 아보카도 1개, 토마토 1개, 샐러드 채소 30g</p>
+
+		<p><span>드레싱 : </span>올리브유 1큰술, 레몬즙 2큰술, 꿀 1큰술, 소금 약간</p>
+
+		<p>1. 샐러드 채소를 씻고 물기를 제거한 후 준비한다.</p>
+
+		<p>2. 레드향과 아보카도, 토마토를 먹기 좋은 크기로 썰어둡니다.</p>
+
+		<p>3. 드레싱 재료를 믹서에 갈아줍니다.</p>
+
+		<p>4. 볼에 샐러드 채소와 썰어 둔 레드향, 아보카도, 토마토를 넣고 드레싱을 뿌리면 끝!</p>
+	</div>
+
+	<video src="./video/salad.mp4" controls>
+		<sourc src="./video/salad.mp4" type="video/mp4">
+			<source src="./video/salad.ogg" type="video.ogg">
+			너의 브라우저가 비디오 태그를 지원하지 않는다
+	</video>
+	<h3 id="bott">상품 구성</h3>
+
+	<div id="tname">
+		<p>선물용과 가정용 상품 구성</p>
+	</div>
+
+	<table>
+		<tr>
+			<th class="backg">용도</th>
+			<th>중량</th>
+			<th>갯수</th>
+			<th>가격</th>
+		</tr>
+		<tr>
+			<th class="small backg" rowspan="2">선물용</th>
+			<td>3kg</td>
+			<td>11~16과</td>
+			<td>35000원</td>
+		</tr>
+		<tr>
+			<td>5kg</td>
+			<td>18~26과</td>
+			<td>52000원</td>
+		</tr>
+		<tr>
+			<th class="small backg" rowspan="2">가정용</th>
+			<td>3kg</td>
+			<td>11~16과</td>
+			<td>30000원</td>
+		</tr>
+		<tr>
+			<td>5kg</td>
+			<td>18~26과</td>
+			<td>47000d원</td>
+		</tr>
+	</table>
+	<h3>주문하기</h3>
+	<p><a href="#top">주문서 작성하기</a> </p>
 </body>
 
 </html>

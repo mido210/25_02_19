@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>8번</title>
+	<style>
+		h1 {
+			width: 150px;
+			margin: 0 auto;
+		}
+
+		table {
+			width: 1000px;
+			height: 400px;
+			margin: 0 auto;
+			border: 1px solid black;
+			border-collapse: collapse;
+
+		}
+
+		th {
+
+			border: 1px solid black;
+		}
+
+		td {
+			border: 1px solid black;
+			text-align: center;
+
+
+		}
+
+		.widt {
+			width: 150px;
+			margin: 0 auto;
+		}
+
+		.long {
+			width: 50px;
+			height: 70px;
+		}
+
+		.text {
+			font-size: x-large;
+			font-weight: 900;
+			color: white;
+		}
+
+		#gre {
+			background-color: green;
+		}
+
+		.pink {
+			background-color: rgb(206, 19, 112);
+		}
+
+		.pur {
+			background-color: purple;
+		}
+
+		.sky {
+			background-color: lightskyblue;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>시 간 표 </h1>
+	<table>
+		<tr>
+			<th class="long"></th>
+			<th class="widt">MON</th>
+			<th class="widt">TUE</th>
+			<th class="widt">WEN</th>
+			<th class="widt">THU</th>
+			<th class="widt">FRI</th>
+		</tr>
+		<tr>
+			<th class="long">1</th>
+			<td rowspan="2" class="text" id="gre">국어</td>
+			<td></td>
+			<td></td>
+			<td></td>
+
+		</tr>
+		<tr>
+			<th class="long">2</th>
+			<td rowspan="2" class="text pink">수학</td>
+			<td rowspan="2" class="text pur">영어</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th class="long">3</th>
+			<td></td>
+			<td rowspan="3" class="text  pink">수학</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th class="long" class="text">4</th>
+			<td></td>
+			<td></td>
+			<td rowspan="3" class="text">체육</td>
+			<td rowspan="2" class="text pur">영어</td>
+		</tr>
+		<tr>
+			<th class="long" class="text">5</th>
+			<td></td>
+			<td></td>
+
+
+
+		</tr>
+		<tr>
+			<th class="long" class="text">6</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="text sky">국사</td>
+
+
+		</tr>
+	</table>
+</body>
+
+</html>
