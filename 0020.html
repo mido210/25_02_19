@@ -10,7 +10,7 @@
 
 			margin-bottom: 10px;
 
-			padding: 8px;
+			padding: 6px;
 		}
 
 		fieldset {
@@ -18,9 +18,30 @@
 			border: 1px solid black;
 		}
 
-		form {
-			font-size: 150%;
-			margin: 60px;
+		#bt {
+			width: 400px;
+			margin: 0 auto;
+			padding: 10px;
+
+		}
+
+		button {
+			width: 100px;
+			height: 40px;
+			margin: 5px;
+		}
+
+		.sam label {
+			display: inline-block;
+			width: 100px;
+		}
+
+		.long {
+			width: 250px;
+		}
+
+		span {
+			font-size: small;
 		}
 	</style>
 
@@ -30,33 +51,38 @@
 	<form action="">
 		<fieldset>
 			<legend>배송정보</legend>
-			<div>
+			<div class="sam">
 				<label for="">주문 상품</label>
-				<input value="아이패드 12.9인치" class="mar" readonly>
+				<input value="아이패드 12.9인치" class="long" readonly>
 			</div>
-			<div>
+			<div class="sam">
 				<label for="">이름</label>
-				<input type="text" class="mar3">
+				<input type="text" class="long">
 			</div>
-			<div>
+			<div class="sam">
 				<label for="">배송 주소</label>
-				<input type="text" class="mar">
+				<input type="text" class="long">
 			</div>
-			<div>
+			<div class="sam">
 				<label for="">이메일</label>
-				<input type="email" class="mar2">
+				<input type="email" class="long">
 			</div>
-			<div>
+			<div class="sam">
 				<label for="">연락처</label>
-				<input type="text" class="mar2" placeholder="하이픈 빼고 입력해주세요(0123445678)">
+				<input type="text" class="long" placeholder="하이픈 빼고 입력해주세요(0123445678)">
 			</div>
-			<div>
+			<div class="sam">
 				<label for="">배송일 지정</label>
 				<input type="date" class="mar1">
+				<span>(주문일로부터 최소 3일 이후)</span>
 			</div>
-		</fieldset>
 
+		</fieldset>
 	</form>
+	<div id="bt">
+		<button>주문하기</button>
+		<button>취소하기</button>
+	</div>
 </body>
 
 </html>
